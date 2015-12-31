@@ -6,21 +6,24 @@
  * @author Will Morgan <@willmorgan>
  * @copyright Copyright (c) 2013, Better Brief LLP
  */
-class OpauthValidationException extends Exception {
+class OpauthValidationException extends Exception
+{
 
-	protected $data;
+    protected $data;
 
-	public function __construct($message, $code, $data = null) {
-		parent::__construct($message, $code);
-		$this->setData($data);
-	}
+    public function __construct($message, $code, $data = null)
+    {
+        parent::__construct($message, $code);
+        $this->setData($data);
+    }
 
-	public function setData($data) {
-		$this->data = $data;
-	}
+    public function setData($data)
+    {
+        $this->data = $data;
+    }
 
-	public function getData() {
-		return $this->data;
-	}
-
+    public function getData()
+    {
+        return $this->data;
+    }
 }
